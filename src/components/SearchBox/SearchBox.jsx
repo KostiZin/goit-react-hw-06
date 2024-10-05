@@ -7,8 +7,6 @@ const SearchBox = () => {
 
   const dispatch = useDispatch();
 
-  console.log(input);
-
   return (
     <div className={css.container}>
       <p>Find contacts by name</p>

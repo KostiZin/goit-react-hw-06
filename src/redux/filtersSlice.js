@@ -6,24 +6,15 @@ const initialState = {
   },
 };
 
-console.log(initialState.filters.name);
-
 const slice = createSlice({
   name: "filters",
   initialState,
   reducers: {
     changeFilter: (state, action) => {
       state.filters.name = action.payload;
-      //   state.filters.name.filter((user) =>
-      //     user.name.toLowerCase().includes(action.payload.toLowerCase())
-      //   );
     },
   },
 });
-
-// const handleInputChange = (e) => {
-//     setInputValue(e.target.value);
-//   };
 
 export const selectNameFilter = (state) => state.filters.filters.name;
 
